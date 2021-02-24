@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="./manifest.json"/>
+    <link rel="stylesheet" href="./style.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <script src="./app.js" defer></script>
+    <title>XO game</title>
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            X-O game
+        </div>
+        <ul>
+            <li onclick="showscore('not decided')"><i class="fas fa-times"></i></li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="b1" id="b1" onclick="boxcall(0)">
+            
+            
+        </div>
+        <div class="b2" id="b2" onclick="boxcall(1)">
+            
+        </div>
+        <div class="b3" id="b3" onclick="boxcall(2)">
+
+        </div>
+        <div class="b4" id="b4" onclick="boxcall(3)">
+
+        </div>
+        <div class="b5" id="b5" onclick="boxcall(4)">
+
+        </div>
+        <div class="b6" id="b6" onclick="boxcall(5)">
+
+        </div>
+        <div class="b7" id="b7" onclick="boxcall(6)">
+
+        </div>
+        <div class="b8" id="b8" onclick="boxcall(7)">
+
+        </div>
+        <div class="b9" id="b9" onclick="boxcall(8)">
+
+        </div>
+
+    </div>
+    <div class="winnerwindow">
+        <p id="winnis">Winner is </p><span id="winnname" style="font-size: 4rem; font-weight: bold;"> </span>
+        <button class="restart" onclick="resetall()">restart &circlearrowright;</button>
+    </div>
+    <div class="overlay"></div>
+
+    <div class="play"><span style="font-size: 1.5rem;color: white;">Play</span></div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+    "name":"x-o game",
+    "short_name":"x-o game",
+    "start_url":".",
+    "background_color":"aquamarine",
+    "theme_color":"rgb(0, 102, 136)",
+    "display":"standalone",
+    "icons":[
+        {
+            "src":"./tictac.png",
+            "sizes":"512x512",
+            "type":"image/png"
+        }
+        
+    ]
+
+}
