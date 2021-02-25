@@ -11,6 +11,8 @@ if("serviceWorker" in navigator){
 
 
 
+
+
 let allcells = [];
 allcells.push(document.getElementById("b1"));
 allcells.push(document.getElementById("b2"));
@@ -90,8 +92,9 @@ function checkcondition(namw){
         showscore(varr);
     }
     else if(oddeven==10){
-        document.getElementById("winnis").innerHTML="";
-        showscore("Drawn!");
+        checkcondition("x");
+
+        
     }
     else{
         console.log("Computing...");
@@ -103,7 +106,7 @@ function checkcondition(namw){
 function showscore(winn){
     let popup = document.querySelector(".winnerwindow");
     let overlay = document.querySelector(".overlay");
-    document.getElementById("winnname").innerHTML=winn;
+    document.getElementById("winnname").innerHTML='"'+winn+'"';
     popup.classList.toggle("active");
     overlay.classList.toggle("active");
 }
